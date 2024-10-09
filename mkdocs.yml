@@ -26,8 +26,8 @@ theme:
 plugins:
   - search
   - glightbox
-  #- privacy
-  - social
+  - privacy
+  #- social
   - rss:
       match_path: ./posts.*
   - blog:
