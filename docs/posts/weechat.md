@@ -1,6 +1,5 @@
 ---
 authors: [stevenix]
-title: My Weechat Setup
 date: 2024-10-05
 draft: true
 ---
