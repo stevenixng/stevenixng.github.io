@@ -6,14 +6,14 @@ categories:
 draft: true
 ---
 
-# My apartment home lab in Brazil
+# My home lab
 
 I've worked in datacenters for over 10 years. My dream was to live in a house with a basement where I could put a large rack full of eBay servers and replicate some of that experience. However I have grown to love living in tall buildings in big cities, and that means a smaller apartment where I have the challenges of heating, cooling, noise and large electric bills. Here is how I have a reasonable home lab configured now.
 
 <!-- more -->
 
 ## Core network
-![livingroom_network](home_lab_apt/lr_network.jpeg "livingroom network")
+![livingroom_network](home_lab/lr_network.jpeg "livingroom network")
 The core of my network sits in my livingroom entertainment center. This ends up being a good place to put things because thats where the Claro GPON fiber goes into the modem, and the enterainment center works perfectly well as a place to store equipment. Plus the network gear is fanless and quiet. In the picture you'll see some tape covering some of the brightest lights. I have a pair of AC Infinity fans to help keep things cool. I like this better than taking apart hardware to replace moving parts.
 
 ## Mikrotik 24 port switch 
@@ -40,12 +40,12 @@ I have two Dell OptiPlex 7050 mini servers running proxmox. Not a big complicate
 The entertainment center also seems to be an appropriate space to have some of my other miscellaneious hardware such as my [Home Assistant Green](https://www.home-assistant.io/green/) and Philips Hue hub. I don't have a lot of killer IoT home automation stuff going on anymore, but I like being able to control the lights from my phone and monitor temperature and humidity around the home.
 
 ## Office
-![office_network](home_lab_apt/office_network.jpeg "office network")
+![office_network](home_lab/office_network.jpeg "office network")
 In the office I have a Mikrotik 8 port [CSS610-8G-2S+IN](https://mikrotik.com/product/css610_8g_2s_in) switch. This is connected to the 24 port livingroom switch via multimode fiber. My wife and I work in this room and we each have a desk with a monitor, keyboard, and mouse connected to a dock that we can plug work and personal laptops into. We also each have desktop towers and I have my "pet" server running FreeBSD.
 
 ## FreeBSD server
 To explain a little about why I love [FreeBSD](https://www.freebsd.org/), I've been running this thing without having to do a fresh install or relearn how to configure networking for years. This is my ZFS fileserver and runs a few other services. It has 8x 1T SSDs in a RAID 10 array and 8x 4T WD Reds in a RAIDz2 array. It contains backups from all my workstations and VMs, a MySQL database server, and hosts home directories for friends and family to back up their data.
-![beefcake](home_lab_apt/beefcake.png)
+![beefcake](home_lab/beefcake.png)
 Everything is installed in a [Fractal Design R5](https://www.fractal-design.com/products/cases/define/define-r5/blackout/) case. Its big and heavy, but has thick walls and quiet.
 
 ## rPi running at a friends hosue
