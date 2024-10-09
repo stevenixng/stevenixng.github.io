@@ -1,0 +1,57 @@
+site_name: abnml
+site_url: https://wiki.abnml.com
+theme: 
+  language: en
+  name: material
+  logo:
+  favicon: material/folder-pound
+  icon:
+    logo: material/folder-pound
+  palette:
+    primary: green
+    accent: light green
+  highlightjs: true
+  hljs_languages:
+    - powershell
+    - python
+  features:
+    - navigation.indexes
+    - navigation.instant
+    - navigation.path
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+  - glightbox
+  - privacy
+  - social
+  - rss:
+      match_path: ./posts.*
+  - blog:
+      blog_dir: .
+      authors: true
+      categories: false
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.keys
+  - admonition
+  - attr_list
+  - md_in_html
+
+extra:
+  social:
+    - icon: fontawesome/brands/mastodon 
+      link: https://infosec.exchange/@stevenix
+    - icon: fontawesome/brands/github
+      link: https://github.com/stevenixng
