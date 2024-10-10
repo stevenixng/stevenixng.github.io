@@ -1,5 +1,6 @@
 site_name: abnml
 site_url: https://wiki.abnml.com
+
 theme: 
   language: en
   name: material
@@ -8,8 +9,25 @@ theme:
   icon:
     logo: material/folder-pound
   palette:
-    primary: green
-    accent: light green
+#    - media: "(prefers-color-scheme)"
+#      toggle:
+#      icon: material/brightness-auto
+#      name: switch to light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-7
+        name: switch to light mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: green
+      accent: light green
+      toggle:
+        icon: material/brightness-4
+        name: switch to light mode
+
   highlightjs: true
   hljs_languages:
     - powershell
