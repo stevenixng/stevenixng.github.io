@@ -43,6 +43,10 @@ The entertainment center also seems to be an appropriate space to have some of m
 ![office_network](home_lab/office_network.jpeg "office network")
 In the office I have a Mikrotik 8 port [CSS610-8G-2S+IN](https://mikrotik.com/product/css610_8g_2s_in) switch. This is connected to the 24 port livingroom switch via multimode fiber. My wife and I work in this room and we each have a desk with a monitor, keyboard, and mouse connected to a dock that we can plug work and personal laptops into. We also each have desktop towers and I have my "pet" server running FreeBSD.
 
+## WiFi
+I have been using Ubiquiti UniFi APs for a long time with no complaints, other than it feels unecessary to run a whole controller just for two access points in a small apartment. I understand and appreciate the point in a larger environment with many APs but for home use it seemed like overkill. When I moved I didn't have any of my equipment at first. WiFi range was terrible with the built in stuff that came with the modem. The concrete walls of our apartment were very thick and the tp-link Decos are a popular choice around here for wireless backhaul mesh. My problem is while it can support a guest network, it doesn't support VLANs or more custom networks. I wanted a LAN, IoT, and guest. The tp-link Deco three pack found a new home at my in-laws apartment.
+
+
 ## FreeBSD server
 To explain a little about why I love [FreeBSD](https://www.freebsd.org/), I've been running this thing without having to do a fresh install or relearn how to configure networking for years. This is my ZFS fileserver and runs a few other services. It has 8x 1T SSDs in a RAID 10 array and 8x 4T WD Reds in a RAIDz2 array. It contains backups from all my workstations and VMs, a MySQL database server, and hosts home directories for friends and family to back up their data.
 ![beefcake](home_lab/beefcake.png)
